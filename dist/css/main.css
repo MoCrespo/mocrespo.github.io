@@ -34,6 +34,7 @@
   position: absolute;
   z-index: 1;
   right: 1rem;
+  top: 1rem;
   height: 20px;
   width: 28px;
   cursor: pointer;
@@ -134,19 +135,19 @@
           transform: translateY(0);
 }
 
-.nav .menu-nav.__item {
+.nav .menu-nav__item {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.nav .menu-nav.__item.open {
+.nav .menu-nav__item.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.nav .menu-nav.__item.active > a {
+.nav .menu-nav__item.active > a {
   color: #ff652f;
 }
 
