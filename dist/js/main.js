@@ -3,6 +3,7 @@ const hambuger = document.querySelector('.menu-btn__burger')
 const nav = document.querySelector('.nav')
 const menuNav = document.querySelector('.menu-nav')
 const navItems = document.querySelectorAll('.menu-nav__item')
+const copyright = document.querySelector('#copyright')
 
 
 let showMenu = false
@@ -27,3 +28,8 @@ function toggleMenu() {
         showMenu = false
     }
 }
+
+
+const date = new Date();
+const year = date.getFullYear();
+copyright.innerHTML = `&copy; Copyright ${year}`
